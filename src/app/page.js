@@ -43,9 +43,9 @@ const page = async () => {
                 {posts.map((post) => (
                     <Link href={'/blog/' + post.id} key={post.id}>
                         <h2>
-                            {post.title.rendered} <span>-></span>
+                            {post.title.rendered} <span>&gt;</span>
                         </h2>
-                        <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
+                        <div dangerouslySetInnerHTML={{__html: post.excerpt.rendered}}/>
                     </Link>
                 ))}
             </div>
